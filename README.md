@@ -3,7 +3,10 @@ rk3326 evb보드의 펌웨어를 만들어 봤습니다.
 
 소스코드를 repo명령어로 받아와야 하는데 새 폴더를 만든 뒤
 
-repo init --repo-url=https://github.com/rockchip-linux/repo --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master
+repo init --no-clone-bundle -u https://github.com/rockchip-linux/manifests -b master
+  
+  --repo-url=https://github.com/rockchip-linux/repo
+  이 명령어가 원래는 있었는데 기존에 설치된 repo명령어랑 충돌을 일으킨다.
 
 명령어를 입력한다. 이게 rk에서 만든 것이 문제인지 repo를 init하는데 python을 2.7  3.7 바꿔가며 설치해야
 한다. 이때 정상적인 방법으로 리눅스에 python의 버전들이 깔려있다면
